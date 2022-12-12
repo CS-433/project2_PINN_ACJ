@@ -45,7 +45,14 @@ def compute_trajectory_RNN(x0, x0dot, model, xLeft, xRight):
 
     for t in ts:
       qdot, forces = getqdot(q[:2*N_m], q[2*N_m:], model, xLeft, xRight, x_prev, f_prev)
-      q += dt * qdot
+
+      # # forward euler update
+      # q += dt * qdot
+
+      # symplectic euler update
+      q[2*N_m:] += dt * qdot[2*N_m:]
+      q[:2*N_m] += dt * qdot[:2*N_m]
+
       qs.append(q.copy())
       x_prev = q[:2*N_m]
       f_prev = forces
