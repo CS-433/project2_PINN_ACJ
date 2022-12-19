@@ -1,6 +1,6 @@
 # project2_PINN_ACJ
 
-This repository contains all the codes and files related to project 2 of CS-433 Machine Learning. The aim of this project is to implement a Physic-informed neural network (PINN) in order to first predict the forcing acting on a system based on discrete masses and springs. After that, the last step is to invert the predicted force in order to obtain the stifness matrix and therefore check if our PINN learned the physics. 
+This repository contains all the codes and files related to project 2 of CS-433 Machine Learning. The aim of this project was to implement a Physic-informed neural network (PINN) in order to first predict the forcing acting on a system based on discrete masses and springs. After that, the last step was to invert the predicted force in order to obtain the stifness matrix and therefore check if our PINN learned the physics. 
 
 # Project structure 
 
