@@ -5,7 +5,7 @@ This repository contains all the codes and files related to project 2 of CS-433 
 # Project structure 
 
 ## Dataset description
-The two data sets S_{1} used for this project 
+For this project, two data sets were used. Both have the same structure. The first data set $S_{1}$
 
 
 ## File structure 
