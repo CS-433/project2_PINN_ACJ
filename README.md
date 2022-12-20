@@ -11,7 +11,7 @@ The data set $S_{1}$ was used to train our PINN and the second one $S_{2}$ to te
 
 
 ## File structure 
-add .... 
+- hyperparameters_tests : this folder contains all the files related to the hyperparameters which goal is to find the combination of hidden layers and neurons that results to the lowest error between the truth trajectories and the ones predicted by our PINN. 
 
 
 # Team member 
