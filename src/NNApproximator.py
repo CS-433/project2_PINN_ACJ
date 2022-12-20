@@ -1,6 +1,7 @@
-from torch.autograd import grad
-from functorch import vmap, vjp
-from functorch import jacrev, jacfwd
+import torch
+import torch.nn as nn
+from functorch import vmap
+from functorch import jacrev
 
 class NNApproximator(nn.Module):
   '''
@@ -22,11 +23,11 @@ class NNApproximator(nn.Module):
     self.scale_f = 30.0
     self.scale_grad_f = self.scale_f / self.scale_x
 
-  def set_X_scale(scale_x):
+  def set_X_scale(self, scale_x):
     self.scale_x = scale_x
     self.scale_grad_f = self.scale_f / self.scale_x
 
-  def set_F_scale(scale_f):
+  def set_F_scale(self, scale_f):
     self.scale_f = scale_f
     self.scale_grad_f = self.scale_f / self.scale_x
 
