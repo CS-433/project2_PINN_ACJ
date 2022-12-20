@@ -11,7 +11,15 @@ The data set $S_{1}$ was used to train our PINN and the second one $S_{2}$ to te
 
 
 ## File structure 
-- simulator : this folder contains all the files needed to solve the PDEs of a system composed of masses and springs. The 'SpringMassSystem.py' file contains some helper functions. The notebook 'SpringMassSimulation_datagen.ipynb' allows to 
+- simulator : this folder contains all the files needed to solve the PDEs of a system composed of masses and springs. The 'SpringMassSystem.py' file contains some helper functions. The notebook 'SpringMassSimulation_datagen.ipynb' allows to choose the following parameters : 
+     - the number of masses $N$ 
+     - the rest length $L_{0}$ 
+     - the spring stiffness $k$ 
+     - the mass of all the masses $M$.
+     - the simulation length $T_{d}
+     - the step time $T_{s}$
+Having those parameters, the notebook allows to compute the position, velocity and acceleration of each masses in $\hat{x}$ and $\hat{y}$ direction. Those results are saved in a csv file. 
+
 - hyperparameters_tests : this folder contains all the files related to the hyperparameters which goal is to find the combination of hidden layers and neurons that results to the lowest error between the truth trajectories and the ones predicted by our PINN. This folder contains a notebook 'final_hyperparamters_tests.ipynb' that has been run cell by cell to compute our results, a data file 'k=50_L=7_N=5_M=1.csv' that contains the data set used for the hyperparameters tests and 4 npy files that contains our results. 
 
 
