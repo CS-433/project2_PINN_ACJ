@@ -16,7 +16,7 @@ The data set $S_{1}$ was used to train our PINN and the second one $S_{2}$ to te
      - the rest length $L_{0}$ 
      - the spring stiffness $k$ 
      - the mass of all the masses $M$.
-     - the simulation length $T_{d}
+     - the simulation length $T_{d}$
      - the step time $T_{s}$
 Having those parameters, the notebook allows to compute the position, velocity and acceleration of each masses in $\hat{x}$ and $\hat{y}$ direction. Those results are saved in a csv file. 
 
