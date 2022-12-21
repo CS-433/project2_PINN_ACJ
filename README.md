@@ -21,11 +21,13 @@ The data set $S_{1}$ was used to train our PINN and the second one $S_{2}$ to te
     
 Having those parameters, the notebook allows to compute the positions $x$ and $y$, the velocities $\dot{x}$ and $\dot{y}$, and the accelerations $\ddot{x}$ and $\ddot{y}$ of each masses. Those results are then stored in a csv file and then plotted. 
 
-- derivations : this folder don't contain any code. It only contains docs where we put our ideas and different reasoning from the start to the very end. It may be useful for anybody who wants to provide further work related to the project. 
+- derivations : this folder don't contain any code. It only contains docs where we put our ideas and different reasoning from the start to the very end. It may be useful for anybody who wants to provide further work related to the project. In particularly, the file 'PINN constraints for a spring-mass system.docx' contains the detailled derivations of our losses and NN module.
 
 - hyperparameters_tests : this folder contains all the files related to the hyperparameters which goal is to find the combination of hidden layers and neurons that results to the lowest error between the truth trajectories and the ones predicted by our PINN. This folder contains a notebook 'final_hyperparamters_tests.ipynb' that has been run cell by cell to compute our results, a data file 'k=50_L=7_N=5_M=1.csv' that contains the data set used for the hyperparameters tests and 4 npy files that contains our results. 
 
 - src : this folder contains some helpers py files used to compute the different losses as well as the trajectories, the velocities and the acceleration of each movable masses. 
+
+- varing_num_masses : This folder contains a notebook 'varing_masses_experiment.ipynb' where we trained and tested our PINN in different models by changing the nb of masses. 
 
 
 # Team member 
