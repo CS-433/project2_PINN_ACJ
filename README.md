@@ -32,7 +32,7 @@ The data set $S_{1}$ was used to train our PINN and the second one $S_{2}$ to te
 
 - varing_num_masses : This folder contains a notebook 'varing_masses_experiment.ipynb' where we trained and tested our PINN with different set-up by changing the nb of masses. For each set-up, we computed the predited forces as well as the predicted trajectories. 
 
-- EXP_transfer_learning : 
+- EXP_transfer_learning : this folder contains 
 
 
 # Team member 
