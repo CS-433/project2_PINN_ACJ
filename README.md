@@ -15,7 +15,7 @@ The data set $S_{1}$ was used to train our PINN and the second one $S_{2}$ to te
      - the number of masses $N$ 
      - the rest length $L_{0}$ 
      - the spring stiffness $k$ 
-     - the mass of all the masses $M$.
+     - the mass $M$ of each discrete mass 
      - the simulation length $T_{d}$
      - the step time $T_{s}$
     
