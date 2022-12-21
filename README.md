@@ -25,6 +25,8 @@ Having those parameters, the notebook allows to compute the positions $x$ and $y
 
 - hyperparameters_tests : this folder contains all the files related to the hyperparameters which goal is to find the combination of hidden layers and neurons that results to the lowest error between the truth trajectories and the ones predicted by our PINN. This folder contains a notebook 'final_hyperparamters_tests.ipynb' that has been run cell by cell to compute our results, a data file 'k=50_L=7_N=5_M=1.csv' that contains the data set used for the hyperparameters tests and 4 npy files that contains our results. 
 
+- src : this folder contains some helpers py files used to compute the different losses, etc. 
+
 
 # Team member 
 This project was done in the scope of the CS-433 course by : 
