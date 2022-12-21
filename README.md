@@ -22,7 +22,7 @@ The data set $S_{1}$ was used to train our PINN and the second one $S_{2}$ to te
      Having those parameters, the notebook allows to compute the positions $x$ and $y$, the velocities $\dot{x}$ and $\dot{y}$, and the accelerations  
      $\ddot{x}$ and $\ddot{y}$ of each masses. Those results are then stored in a csv file in the folder 'data'. 
 
-- data : this folder contains all the data computed by the above folder. All data sets are in csv format. 
+- data : this folder contains all the data computed by the above folder. All data sets are in csv format. For a detailled description of the data, please refer to the section 'Data set description'
 
 - derivations : this folder don't contain any code. It only contains docs where we put our ideas and different reasoning from the start to the very end. It may be useful for anybody who wants to provide further work related to the project. In particularly, the file 'PINN constraints for a spring-mass system.docx' contains the detailled derivations of our losses and NN module.
 
