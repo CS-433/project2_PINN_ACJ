@@ -19,7 +19,8 @@ The data set $S_{1}$ was used to train our PINN and the second one $S_{2}$ to te
      - the simulation length $T_{d}$
      - the step time $T_{s}$
     
-Having those parameters, the notebook allows to compute the positions $x$ and $y$, the velocities $\dot{x}$ and $\dot{y}$, and the accelerations $\ddot{x}$ and $\ddot{y}$ of each masses. Those results are then stored in a csv file in the folder 'data'. 
+     Having those parameters, the notebook allows to compute the positions $x$ and $y$, the velocities $\dot{x}$ and $\dot{y}$, and the accelerations  
+     $\ddot{x}$ and $\ddot{y}$ of each masses. Those results are then stored in a csv file in the folder 'data'. 
 
 - data : this folder contains all the data computed by the above folder. All data sets are in csv format. 
 
