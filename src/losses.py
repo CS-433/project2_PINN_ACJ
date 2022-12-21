@@ -1,3 +1,7 @@
+import torch
+import numpy as np
+from functorch import vmap
+
 def compute_data_loss_force(model, x_tr, y_tr):
   """
 

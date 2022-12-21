@@ -1,6 +1,8 @@
+import torch
 from torch.autograd import grad
 from functorch import vmap, vjp
 from functorch import jacrev, jacfwd
+from torch import nn
 
 class NNApproximator(nn.Module):
   '''
