@@ -31,7 +31,7 @@ Having those parameters, the notebook allows to compute the positions $x$ and $y
 
 
 # Team member 
-This project was done in the scope of the CS-433 course by : 
+This project was done in the scope of the course CS-433 Machine Learning by : 
 *   `Jonathan Chuah`
 *   `Tz-Ching Yu`
 *   `Albias Havolli `
