@@ -4,14 +4,18 @@ from functorch import vmap
 from functorch import jacrev
 
 class NNApproximator(nn.Module):
-  '''
-  '''
+  """
+  This class implements our PINN network architecture. Aside from implementing standard methods 
+  such as `self.forward`, methods are implemented for computing the output Jacobian (`self.jacobian`),
+  and re-scaling the inputs and outputs (`self.set_X_scale`, `self.set_F_scale`).
+  """
   def __init__(self, dim_input=6, dim_output=2, num_hidden=2, dim_hidden=1, activation=nn.Tanh()):
     super().__init__()
 
     # self.layer_in = nn.Linear(dim_input, dim_hidden)
+    # self.layer_out = nn.Linear(dim_hidden, dim_output)
     self.layer_in = nn.Linear(4, dim_hidden)
-    self.layer_out = nn.Linear(dim_hidden, dim_output)
+    self.layer_out = nn.Linear(dim_hidden, 2)
     self.k = nn.Parameter(torch.tensor(50.0, requires_grad=False))
 
     num_middle = num_hidden - 1

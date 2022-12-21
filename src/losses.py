@@ -4,13 +4,13 @@ import numpy as np
 
 def compute_data_loss_force(model, x_tr, y_tr):
   """
-
+  Computes the data regression loss for a model, using the training inputs `x_tr` and labels `y_tr`.
   """
   return 0.5 * torch.mean((model.forward(x_tr).flatten() - y_tr.flatten()) ** 2) / (model.scale_f ** 2)
 
 def compute_PINN_loss(model, x):
   """
-
+  Computes the PINN loss for a PINN model at the collocation points `x`.
   """
   F_dot = model.jacobian(x)
   s1 = x[:, 0:2] - x[:, 2:4]

@@ -3,6 +3,10 @@ import torch
 from scipy.integrate import solve_ivp
 
 def getqdot_RNN(x, xdot, model, xLeft, xRight, x_prev, fs_prev):
+    """
+    A method internal to `compute_trajectory_RNN` that converts the 2nd-order Newton ODE into a 
+    1st-order, augmented ODE that can be solved using standard numerical integrators.
+    """
     N_m = x.shape[0] // 2
 
     # build the full position vector
@@ -29,6 +33,16 @@ def getqdot_RNN(x, xdot, model, xLeft, xRight, x_prev, fs_prev):
     return qdot, forces
 
 def compute_trajectory_RNN(x0, x0dot, model, xLeft, xRight):
+    """
+    Experimental trajectory solver for a neural network model that computes the per-mass forces 
+    using both past & present position and velocity vectors.
+
+    Computes the trajectory of a spring-mass system starting from the initial position, `x0`, and
+    velocity, `x0dot`, according to Newton's 2nd law. 
+    `model` is a neural network model that accepts the vector of position variables, x, and outputs
+    the per-mass forces.
+    `xLeft` and `xRight` are the (fixed) positions of the two ends of the spring-mass chain.
+    """
     N_m = x0.shape[0] // 2
     q0 = np.concatenate((x0, x0dot))
 
