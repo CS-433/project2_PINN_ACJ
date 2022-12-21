@@ -27,7 +27,7 @@ Having those parameters, the notebook allows to compute the positions $x$ and $y
 
 - src : this folder contains some helpers py files used to compute the different losses as well as the trajectories, the velocities and the acceleration of each movable masses. 
 
-- varing_num_masses : This folder contains a notebook 'varing_masses_experiment.ipynb' where we trained and tested our PINN in different models by changing the nb of masses. 
+- varing_num_masses : This folder contains a notebook 'varing_masses_experiment.ipynb' where we trained and tested our PINN with different set-up by changing the nb of masses. For each set-up, we computed the predited forces as well as the predicted trajectories. 
 
 
 # Team member 
