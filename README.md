@@ -34,6 +34,8 @@ The data set $S_{1}$ was used to train our PINN and the second one $S_{2}$ to te
 
 - EXP_transfer_learning : This folder contains the notebook and data that were used in the transfer learning experiment. This experiment involved taking a pre-trained PINN model and re-training it on a data set with an unknown stiffness coefficient. The aim was to extract the unknown stiffness value from the re-trained network, thereby using it as a parameter identification tool. The model state_dicts from the experiments are also provided for convenience.
 
+- project_2_report : the project's report in PDF format. 
+
 # Team members
 This project was done in the scope of the course CS-433 Machine Learning by :
 *   `Jonathan Chuah`
